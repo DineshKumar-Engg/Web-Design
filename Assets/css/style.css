@@ -1,6 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'spartan'sans-serif;
+}
 h1{
-  background-color:blue;
+  font-size: 50px;
+  line-height: 63px;
+  color:#222;
 }
 h2{
-  font-style:italic;
+  font-size: 40px;
+  line-height: 50px;
+  color:#222;
+}
+h3{
+  font-size: 30px;
+  color:#222;
+}
+h4{
+  font-size: 20px;
+  color:#222;
+}
+h6{
+  font-weight: 400;
+  font-size: 19px;
+}
+p{
+  font-size: 20px;
+  margin:15px 0px 10px 0px
+}
+.section.p1
+{
+  padding:40px 80px;
+}
+.section.p2{
+  margin: 40px 0px;
+}
+/* header bar */
+#header
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0px 0px 0px 0px;
+  padding:5px 5px;
+  background-color:#acdcee;
+  box-shadow: 0 15px 15px rgba(0,0,0,0.07);
+
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li{
+  list-style: none;
+  padding: 0px 20px;
+  position: inherit;
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  transition: 0.3s ease;
+}
+
+/* transition of navbar home,product... into color */
+#navbar li a:hover,
+#navbar li a.active{
+color:#2772db;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content:"";
+  width:30%;
+  height:2px;
+  color:#2772db;
+  left:20px;
+  bottom:-4px;
+  position:absolute;
+}
+.search-box{
+  top:50%;
+  left:50%;
+  transform:translate(-40% -40%);
+  background:#EAF6F6;
+  height:40px;  
+  border-radius: 40px;
+  padding:5px;
+}
+.search-box:hover > input{
+width: 500px;
+padding:0 10px;
+}
+.search-box:hover >.icon{
+  background:#EAF6F6;
+}
+.icon:hover{
+transform: rotate(360deg);
+scale: 0.8;
+}
+input{
+  width: 0;
+  padding:0;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1_1rem;
+  transition: 0.5s ease;
+  line-height: 45px;
+  color:#EAF6F6;
+
+}
+.icon{
+  display:flex;
+  float:right;
+  font-size: 1-1rem;
+  width: 30px;
+  height: 40px;
+  border-radius: 60px;
+  background:#EAF6F6;
+  font-size: 1_1rem;
+  transition: 0.4s ease;
+  text-decoration: none;
+  cursor:pointer;
+  justify-content: center;
+  align-items: center;
 }
