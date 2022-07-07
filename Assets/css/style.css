@@ -73,7 +73,7 @@ p{
 #navbar li a.active{
 color:#2772db;
 }
-#navbar li a.active::after,
+/* #navbar li a.active::after,
 #navbar li a:hover::after{
   content:"";
   width:30%;
@@ -82,7 +82,9 @@ color:#2772db;
   left:20px;
   bottom:-4px;
   position:absolute;
-}
+} */
+/* transition of navbar home,product... into color */
+
 .search-box{
   top:50%;
   left:50%;
@@ -92,17 +94,24 @@ color:#2772db;
   border-radius: 40px;
   padding:5px;
 }
+/* input length move */
 .search-box:hover > input{
 width: 500px;
 padding:0 10px;
 }
+/* input length move */
+/* after hover icon color */
 .search-box:hover >.icon{
   background:#EAF6F6;
 }
+/* after hover icon color */
+/* after hover rotation */
 .icon:hover{
 transform: rotate(360deg);
 scale: 0.8;
 }
+/* after hover rotation */
+/* after hover user input */
 input{
   width: 0;
   padding:0;
@@ -115,6 +124,8 @@ input{
   color:#EAF6F6;
 
 }
+/* after hover user input */
+/* after hover icon size */
 .icon{
   display:flex;
   float:right;
@@ -130,3 +141,4 @@ input{
   justify-content: center;
   align-items: center;
 }
+/* after hover icon size */
