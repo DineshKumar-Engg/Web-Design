@@ -142,14 +142,14 @@ login.addEventListener("click", () => {
         if(user_records.some((v)=>{return v.email==email && v.psw==psw}))
         {
             result.innerText ="✅ Login successfully"
-            setTimeout(function () {
+            // setTimeout(function () {
 
-                // redirect page.
-                window.location.href = 'https://e-com-api.netlify.app/';
+               
+                window.location.href = 'https://e-com-api.netlify.app';
                 
-                //window.clearTimeout(tID);		// clear time out.
                 
-            },1000);
+                
+            
         }
         else
         {
