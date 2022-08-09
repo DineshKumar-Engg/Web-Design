@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
 *{
   margin:0px;
   padding: 0px;
@@ -8,20 +9,20 @@
 h1{
   font-size: 50px;
   line-height: 63px;
-  color:#222;
+  color:white;
 }
 h2{
   font-size: 40px;
   line-height: 50px;
-  color:#222;
+  color:white;
 }
 h3{
   font-size: 30px;
-  color:#222;
+  color:white;
 }
 h4{
   font-size: 20px;
-  color:#222;
+  color:white;
 }
 h6{
   font-weight: 400;
@@ -257,5 +258,129 @@ cursor:pointer;
   cursor: pointer;
 }
 /* End H6 words makes color ,box */
+/* products */
+#product{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poiret One', cursive;
+}
+.heading{
+  text-align: center;
+  font-size:3rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Poiret One', cursive;
+}
 
-/* Login page */
+#cards{
+  display: flex;
+  justify-content:space-around;
+ flex-wrap: wrap;
+}
+/* #cards:hover{
+  box-shadow: 10px 10px 54px rgba(70, 60,200, 0.07);
+  transform: scale(1.1,1.1);
+} */
+.card{
+  width:40%;
+  height:auto;
+  align-items: center;
+  text-align: center;
+  margin-bottom:2rem;
+  padding:1.5rem;
+  border:gray;
+  box-shadow:10px 10px 20px rgba(17, 10, 121, 0.07);
+  font-family:'Poppins', sans-serif;
+
+}
+.title{
+  font-size:0.9rem;
+  color:#000000;
+}
+.img{
+  width:80%;
+}
+.categroy,.price{
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 1rem;
+  font-size: 1.5rem;
+  color:#7FB5FF;
+}
+.description{
+  font-size:25px;
+  font-weight:300;;
+}
+.cart{
+  width: 30%;
+  height:50px;
+  color:white;
+  background-color:#3e8e41;
+  cursor:pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+
+
+#dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin:2rem;
+  border-radius: 5px;
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin:1rem;
+  padding:1rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.Collection{
+margin:0.5rem;
+padding:0.5rem;
+text-decoration: none;
+list-style: none;
+font-weight: 900;
+font-size: 20px;
+color:#000000;  
+text-transform: capitalize;
+}
+
+/* Footer section css start  */
+
+
+
+/* footer Section end */

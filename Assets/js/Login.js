@@ -1,15 +1,4 @@
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-// 		'X-RapidAPI-Host': 'amazon-price1.p.rapidapi.com'
-// 	}
-// };
 
-// fetch('https://amazon-price1.p.rapidapi.com/search?keywords=%3CREQUIRED%3E&marketplace=ES', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
 
 const forms = document.querySelector(".forms"),
     pwShowHide = document.querySelectorAll(".eye-icon"),
@@ -47,9 +36,9 @@ var password2 = document.getElementById("password2");
 var signup = document.getElementById("register");
 var login = document.getElementById("login");
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
+console.log(form)
+form.addEventListener('submit', (e) => {
+    e.preventDefault();          
     validateInputs();
 });
 
@@ -153,6 +142,14 @@ login.addEventListener("click", () => {
         if(user_records.some((v)=>{return v.email==email && v.psw==psw}))
         {
             result.innerText ="✅ Login successfully"
+            setTimeout(function () {
+
+                // redirect page.
+                window.location.href = 'index.html';
+                
+                //window.clearTimeout(tID);		// clear time out.
+                
+            },2000);
         }
         else
         {
@@ -161,5 +158,4 @@ login.addEventListener("click", () => {
         
         }
 });
-
 
