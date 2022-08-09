@@ -210,16 +210,16 @@ font-weight: bold;
 cursor:pointer;
 }
 /* for all feature card single text alignment */
-#feature{
+/* #feature{
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+} */
 /* for all feature card single text alignment */
 
 /* start for all box font,shadow,transition into all feature box */
-#feature .featbox
+/* #feature .featbox
 {
   width:170px;
   font-size:50px;
@@ -234,21 +234,21 @@ cursor:pointer;
   border-radius: 10px;
   transform:scale(1,1);
   transition: all 0.3s ease-in-out;
-}  
+}   */
 /* End for all box font,shadow,transition into all feature box */
 
 /* start Zoom effect for all card in feature*/
-#feature .featbox:hover{
+/* #feature .featbox:hover{
   box-shadow: 10px 10px 54px rgba(70, 60,200, 0.07);
   transform: scale(1.1,1.1);
-}
+} */
 /* End Zoom effect for all card in feature*/
 /* #feature .featbox img{
   margin-bottom:0px;
 } */
 
 /* start H6 words makes color ,box */
-#feature .featbox h6{
+/* #feature .featbox h6{
   display: inline-block;
   margin:0px 15px 20px 15px;
   padding: 9px 6px 8px 6px;
@@ -256,7 +256,7 @@ cursor:pointer;
   border-radius: 3px;
   line-height:1;
   cursor: pointer;
-}
+} */
 /* End H6 words makes color ,box */
 /* products */
 #product{
