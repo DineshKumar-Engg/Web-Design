@@ -145,11 +145,11 @@ login.addEventListener("click", () => {
             setTimeout(function () {
 
                 // redirect page.
-                window.location.href = 'index.html';
+                window.location.href = 'https://e-com-api.netlify.app/';
                 
                 //window.clearTimeout(tID);		// clear time out.
                 
-            },2000);
+            },1000);
         }
         else
         {
